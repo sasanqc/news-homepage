@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+
+.heading-xl {
+  font-weight: $fw-extra-bold;
+  font-size: $fs-heading-xl;
+  line-height: $lh-heading-xl;
+}
+
+.heading-l {
+  font-weight: $fw-bold;
+  font-size: $fs-heading-l;
+  line-height: $lh-heading-l;
+}
+
+.heading-m {
+  font-weight: $fw-bold;
+  font-size: $fs-heading-m;
+  line-height: $lh-heading-m;
+}
+
+.heading-s {
+  font-weight: $fw-extra-bold;
+  font-size: $fs-heading-s;
+  line-height: $lh-heading-s;
+}
+
+.heading-xs {
+  font-weight: $fw-extra-bold;
+  font-size: $fs-heading-xs;
+  line-height: $lh-heading-xs;
+}
+
+.body {
+  font-weight: $fw-regular;
+  font-size: $fs-body;
+  line-height: $lh-body;
+}
