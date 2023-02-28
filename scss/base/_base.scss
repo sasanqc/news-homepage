@@ -8,3 +8,9 @@ body {
   font-family: $font-family-default;
   font-size: $fs-default;
 }
+
+.main-body {
+  max-width: $br-desktop;
+  margin: 0 auto;
+  padding: 9rem 16.5rem;
+}

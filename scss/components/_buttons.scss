@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+.btn,
+.btn:link,
+.btn:visited {
+  &,
+  &:link,
+  &:visited {
+    padding: 1.3rem 3.5rem;
+    color: $clr-almost-white;
+    background-color: $clr-light-vermillion;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.4375rem;
+    transition: background-color 0.3s;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $clr-dark-space-blue;
+  }
+}

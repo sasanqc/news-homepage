@@ -58,7 +58,14 @@ textarea,
 select {
   font: inherit;
 }
-
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+  display: inline-block;
+}
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {

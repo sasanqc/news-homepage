@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+.navigation {
+  color: $clr-gunmetal;
+
+  & > * {
+    transition: color 0.3s ease;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+    &:hover {
+      color: $clr-light-vermillion;
+    }
+  }
+}

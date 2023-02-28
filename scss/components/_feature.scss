@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+.feature {
+  display: flex;
+
+  gap: 2.4rem;
+  height: 100%;
+  max-width: 35rem;
+
+  .heading-m {
+    margin-bottom: 1.2rem;
+    color: $clr-silver;
+  }
+  .heading-xs {
+    margin-bottom: 0.9rem;
+    transition: color 0.2s;
+    &:hover {
+      color: $clr-light-vermillion;
+    }
+  }
+  .body {
+    color: $clr-gunmetal;
+  }
+}
