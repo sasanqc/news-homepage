@@ -1,7 +1,9 @@
 @use "../abstracts/" as *;
 .navigation {
   color: $clr-gunmetal;
-
+  @include respond(phone) {
+    display: none;
+  }
   & > * {
     transition: color 0.3s ease;
     &:not(:last-child) {

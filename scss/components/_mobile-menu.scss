@@ -1,0 +1,54 @@
+@use "../abstracts/" as *;
+.mobile-menu {
+  width: 32rem;
+  height: 100%;
+  background-color: $clr-almost-white;
+  position: absolute;
+  right: -100%;
+
+  &__icon {
+    position: absolute;
+    right: 0;
+    padding: 4.5rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18rem;
+    gap: 3rem;
+    margin-left: 3rem;
+  }
+  &__link {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  &--open {
+    right: 0;
+    animation-name: menu-open-animation;
+    animation-duration: 0.3s;
+  }
+
+  &--close {
+    right: -100%;
+    animation-name: menu-close-animation;
+    animation-duration: 0.3s;
+  }
+}
+@keyframes menu-open-animation {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes menu-close-animation {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100%;
+  }
+}

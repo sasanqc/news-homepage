@@ -5,6 +5,10 @@
   font-weight: $fw-extra-bold;
   font-size: $fs-heading-xl;
   line-height: $lh-heading-xl;
+  @include respond(phone) {
+    font-size: 5rem; //40px
+    line-height: 5rem; //40px
+  }
 }
 
 .heading-l {
@@ -12,6 +16,10 @@
   font-weight: $fw-bold;
   font-size: $fs-heading-l;
   line-height: $lh-heading-l;
+  @include respond(phone) {
+    font-size: 4rem; //32px
+    line-height: 4rem; //32px
+  }
 }
 
 .heading-m {

@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+.mobile-navigation {
+  display: none;
+  @include respond(phone) {
+    display: block;
+  }
+}

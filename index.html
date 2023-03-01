@@ -22,6 +22,7 @@
           alt="news logo"
           class="header__logo"
         />
+
         <nav class="navigation">
           <a href="#" class="navigation__item">Home</a>
           <a href="#" class="navigation__item">New</a>
@@ -29,13 +30,59 @@
           <a href="#" class="navigation__item">Trending</a>
           <a href="#" class="navigation__item">Categories</a>
         </nav>
+
+        <div class="mobile-navigation">
+          <button class="mobile-navigation__btn">
+            <img
+              src="./assets/images/icon-menu.svg"
+              alt="Web 3.0"
+              class="mobile-navigation__icon"
+            />
+          </button>
+
+          <div class="mobile-navigation__content">
+            <div class="modal">
+              <div class="mobile-menu">
+                <div class="mobile-menu__btn">
+                  <img
+                    src="./assets/images/icon-menu-close.svg"
+                    alt="close menu"
+                    class="mobile-menu__icon"
+                  />
+                </div>
+
+                <ul class="mobile-menu__list">
+                  <a href="#" class="mobile-menu__link">New</a>
+                  <a href="#" class="mobile-menu__link">Home</a>
+                  <a href="#" class="mobile-menu__link"> Popular</a>
+                  <a href="#" class="mobile-menu__link">Trending</a>
+                  <a href="#" class="mobile-menu__link">Categories</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </header>
       <section class="hero">
-        <img
-          src="./assets/images/image-web-3-desktop.jpg"
-          alt=""
-          class="hero__image"
-        />
+        <picture class="hero__image">
+          <source
+            srcset="./assets/images/image-web-3-mobile.jpg"
+            media="(max-width: 600px)"
+          />
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="Web 3.0" />
+        </picture>
+
+        <div class="hero__text-box">
+          <h1 class="heading-xl">The Bright Future of Web 3.0?</h1>
+          <div class="hero__description">
+            <p class="body">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
         <article class="hero__new">
           <h1 class="heading-l">New</h1>
 
@@ -60,17 +107,6 @@
             </p>
           </div>
         </article>
-        <div class="hero__text-box">
-          <h1 class="heading-xl">The Bright Future of Web 3.0?</h1>
-          <div class="hero__description">
-            <p class="body">
-              We dive into the next evolution of the web that claims to put the
-              power of the platforms back into the hands of the people. But is
-              it really fulfilling its promise?
-            </p>
-            <a href="#" class="btn">Read more</a>
-          </div>
-        </div>
       </section>
       <div class="features">
         <article class="feature">
@@ -115,5 +151,6 @@
         </article>
       </div>
     </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>

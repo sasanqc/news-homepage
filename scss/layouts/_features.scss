@@ -1,8 +1,12 @@
+@use "../abstracts/" as *;
 .features {
-  height: 12.7rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  //   margin-bottom: 13rem;
   gap: 3rem;
+  height: 12.7rem;
+  @include respond(phone) {
+    margin-bottom: 10rem;
+    height: fit-content;
+  }
 }
